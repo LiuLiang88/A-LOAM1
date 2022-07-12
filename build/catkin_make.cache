@@ -1,0 +1,2 @@
+test
+-DCATKIN_DEVEL_PREFIX=/home/liu/test_loam/devel -DCMAKE_INSTALL_PREFIX=/home/liu/test_loam/install -G Unix Makefiles

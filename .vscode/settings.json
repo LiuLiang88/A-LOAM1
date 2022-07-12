@@ -1,0 +1,87 @@
+{
+    "doxdocgen.generic.paramTemplate": "@param[in] {param} ",
+
+
+  "todo-tree.regex.regex": "((\\*|//|#|<!--|;|/\\*|^)\\s*($TAGS):|^\\s*- \\[ \\])",
+  
+  "todo-tree.highlights.defaultHighlight": {  //如果相应变量没赋值就会使用这里的默认值
+    "foreground": "black",      //字体颜色
+    // "background": "yellow",     //背景色
+    "icon": "check",            //标签样式 check 是一个对号的样式
+    "rulerColour": "yellow",    //边框颜色
+    "type": "tag",              //填充色类型  可在TODO TREE 细节页面找到允许的值 
+    "iconColour": "yellow"      //标签颜色
+  },
+  "todo-tree.general.tags": [
+    "?",
+    "!",
+    "param",
+    "Step",
+    "c++11",
+    "note",
+    "tag",
+    "todo"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "?": {
+      "icon": "question",   //标签样式
+      "foreground": "yellow",  //背景色
+      "iconColour": "yellow",  //标签颜色
+      "type": "text-and-comment"
+    },
+    "!": {
+      "foreground": "red",
+      "icon": "issue-opened",
+      "iconColour": "red",
+      "type": "text-and-comment"
+    },
+    "Step": {
+      "foreground": "#00fc1d",
+      "icon": "question",
+      "iconColour": "green",
+      "type": "text-and-comment",
+      "hideFromTree": true
+    },
+    "c++11": {
+      "icon": "tag",
+      "foreground": "violet",
+      "rulerColour": "violet",
+      "iconColour": "violet",
+      "type": "text-and-comment"
+    },
+    "note": {
+      "icon": "note",
+      "foreground": "orange",
+      "rulerColour": "orange",
+      "iconColour": "orange",
+      "type": "text-and-comment"
+    },
+    "param": {
+      "icon": "issue-closed",
+      "foreground": "orange",
+      "rulerColour": "orange",
+      "iconColour": "orange",
+      "type": "text-and-comment"
+    },
+    "tag": {
+      "icon": "tag",
+      "foreground": "#7CFC00",
+      "rulerColour": "#7CFC00",
+      "iconColour": "#7CFC00",
+      "rulerLane": "full",
+      "type": "text-and-comment"
+    },
+    "todo": {
+      "foreground": "#f90",
+      "rulerColour": "#f90",
+      "iconColour": "#f90",
+      "type": "text-and-comment"
+    }
+    
+  },
+  "python.autoComplete.extraPaths": [
+    "/opt/ros/noetic/lib/python3/dist-packages"
+  ],
+  "todo-tree.tree.scanMode": "workspace only",
+  "git.ignoreLimitWarning": true
+}
